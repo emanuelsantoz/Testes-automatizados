@@ -25,15 +25,15 @@ namespace TestesAutomatizados.Core
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
-        #region Inciando Testes e passando URL
+        
         [SetUp]
         public void InicioTest()
         {
             AbreNavegador();
-            driver.Navigate().GoToUrl("https://www.youtube.com/");
+            driver.Navigate().GoToUrl("https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal");
         }
 
-        #endregion TearDown
+        
         [TearDown]
         public void FimTest()
         {
